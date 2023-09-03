@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string-array name="Coches">
+        <item>911 GT3</item>
+        <item>911 Turbo S</item>
+        <item>718 GT4 RS</item>
+        <item>Taycan Turbo S</item>
+    </string-array>
+
+</resources>
