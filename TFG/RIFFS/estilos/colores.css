@@ -1,0 +1,10 @@
+/* PALETA DE COLORES */
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --amarillo_contraste: #ffc75f;
+  --verde_primario: #007663;
+  --verde_oscuro: #002d27;
+  --verde_claro: #649b92;
+  --verde_fondo: #f2fffe ;
+}

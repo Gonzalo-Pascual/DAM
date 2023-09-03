@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+img {
+  margin-top: 20px;
+  width: 30%;
+}
+
+.coolinput label.text {
+  font-size: 10pt;
+  color: var(--negro);
+  font-weight: 700;
+  position: relative;
+  top: 10px;
+  margin: 0 0 0 12px;
+  padding: 0 3px;
+  background: var(--blanco);
+}
+
+.coolinput input[type=text].input {
+  height: 46px;
+  width: 100%;
+  font-size: 12pt;
+  border: 2px #d3d3d3 solid;
+  border-radius: 4px;
+  background: var(--blanco);
+  padding: 0 16px;
+}
+
+.coolinput input[type=text].input:focus {
+  border-color: var(--amarillo_contraste);
+}
+
+.alert{
+  color: red;
+}
+
+.left {
+  overflow: hidden;
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  width: 900px;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  padding: 0px 50px 30px 50px;
+}
+
+.inicio>h2 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 20pt;
+  padding: 30px 0 10px 0;
+}
+
+
+
+.form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form>p {
+  text-align: right;
+}
+
+.form>p>a {
+  color: #000;
+  font-size: 14px;
+}
+
+.form-field-arch {
+  height: 36px;
+  width: 100%;
+  border: 2px solid #d3d3d3;
+  border-radius: 4px;
+  outline: 0;
+}
+
+input[type ="file"]{
+  padding-top: 8px;
+}
+
+.form-field {
+  height: 46px;
+  width: 100%;
+  padding: 0 16px;
+  border: 2px solid #d3d3d3;
+  border-radius: 4px;
+  outline: 0;
+}
+
+.oculto {
+  height: 46px;
+  width: 100%;
+  padding: 0 16px;
+  border: 2px solid var(--blanco);
+  border-radius: 4px;
+  outline: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+
+.form-field:focus {
+  border-color: var(--amarillo_contraste);
+}
+
+tbody {
+  width: 100%;
+}
+
+tr {
+  width: 50%;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.editelim {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agregarinput {
+  width: 45%;
+  padding: 12px 10px;
+  border: 0;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  background: var(--verde_primario);
+  border-radius: 3px;
+  margin-top: 25px;
+  color: var(--blanco);
+}
+
+input[type="submit"] {
+  width: 45%;
+  padding: 12px 10px;
+  border: 0;
+  margin: 0 auto;
+  align-items: center;
+  background: var(--verde_primario);
+  border-radius: 3px;
+  margin-top: 25px;
+  color: var(--blanco);
+}
+
+.form-field.descripcion {
+  resize: none;
+  min-height: 85px;
+  max-height: 200px;
+  padding-top: 10px;
+  width: 200%;
+}
+
+.espacioarriba {
+  margin-top: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 520px) {
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  input[type='text'] {
+    width: 100%;
+  }
+
+  .inicio>h2 {
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 16pt;
+  }
+
+  img {
+    margin-top: 20px;
+    width: 40%;
+  }
+
+  .form-field.descripcion {
+    resize: none;
+    min-height: 85px;
+    max-height: 200px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 370px) {
+  img {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .tarjeta {
+    background-color: white;
+    padding: 0px 20px 30px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 275px) {
+  img {
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .tarjeta {
+    background-color: white;
+    padding: 0px 10px 30px 10px;
+  }
+
+}

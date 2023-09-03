@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+}
+
+
+
+footer {
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: var(--verde_primario);
+}
+
+.foot {
+  margin-top: 4px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: var(--blanco);
+
+}
+
+
+.info1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columna {
+  width: 23%;
+  display: inline;
+  padding: 20px 0 20px 0;
+}
+
+
+
+
+.titulofooter {
+  font-weight: 700;
+  font-size: 19pt;
+  padding-bottom: 3px;
+}
+
+.textofooter {
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+
+/* boton de suscripción */
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--verde_claro);
+  background-color: transparent;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: var(--negro);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid var(--amarillo_contraste);
+}
+
+.invite-btn {
+  position: absolute;
+  width: 100px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: var(--amarillo_contraste);
+  color: #000000;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+
+.input-container input:placeholder-shown~.invite-btn {
+  pointer-events: none;
+  background-color: var(--verde_claro);
+  color: #fff;
+  opacity: 1;
+}
+
+@media(max-width: 1000px) {
+  .columna {
+    align-items: center;
+    width: 45%;
+    display: inline;
+    justify-content: center;
+    padding: 20px 0 20px 0px;
+  }
+
+
+
+}
+
+@media(max-width: 520px) {
+
+
+  .columna {
+    align-items: center;
+    width: 75%;
+    display: inline;
+    justify-content: center;
+    padding: 20px 0 20px 0px;
+  }
+
+
+}

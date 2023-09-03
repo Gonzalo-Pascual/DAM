@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+h3 i {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+
+.columnas a {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.columnas {
+    margin-top: 0px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: 55px 40px 20px 40px;
+    padding: 60px 0 40px 0;
+    background: var(--verde_claro);
+    color: var(--blanco);
+    align-items: center;
+    width: 40%;
+    display: inline-block;
+    padding-bottom: 50px;
+
+}
+
+.eleccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.articulonombre {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+.nombre {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 8% 0 8%;
+    align-items: center;
+}
+
+.logout{
+    margin-top: 20px;
+}
+
+.logout a {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 700;
+}
+
+
+
+@media(max-width:960px) {
+    .columnas {
+        margin-top: 0px;
+        border-radius: 10px;
+        border-width: 1px;
+        margin: 55px 20px 0 20px;
+        padding: 60px 0 40px 0;
+        background: var(--verde_claro);
+        color: white;
+        align-items: center;
+        width: 40%;
+        display: inline-block;
+        padding-bottom: 50px;
+
+    }
+
+    .eleccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px) {
+    .columnas {
+        margin-top: 0px;
+        border-radius: 10px;
+        border-width: 1px;
+        margin: 55px 20px 0 20px;
+        padding: 60px 0 40px 0;
+        background: var(--verde_claro);
+        color: white;
+        align-items: center;
+        width: 80%;
+        display: inline-block;
+        padding-bottom: 50px;
+
+    }
+
+    .eleccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+}

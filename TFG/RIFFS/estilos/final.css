@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+img {
+  margin-top: 20px;
+  width: 30%;
+}
+
+.left {
+  overflow: hidden;
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  width: 600px;
+  margin-top: 50px;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  padding: 30px 50px 30px 50px;
+  margin: 0px 20px 10px 20px;
+
+}
+
+.inicio>h2 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 20pt;
+  padding: 30px 0 10px 0;
+}
+
+.arriba{
+  padding: 30px 0 15px 0 ;
+  max-width: 300px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inicio>p {
+  text-align: center;
+}
+
+i {
+  font-size: 80pt;
+  font-weight: 600;
+  text-align: center;
+  color: green;
+}
+
+
+
+p {
+  font-size: 16pt;
+  font-weight: 600;
+
+}
+
+.agregarinput {
+  width: 330px;
+  padding: 8px 10px;
+  border: 0;
+  background: var(--verde_primario);
+  border-radius: 3px;
+  color: var(--blanco);
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 465px) {
+  .tarjeta {
+    background-color: var(--blanco);
+    margin: 0px 20px 10px 20px;
+  
+  }
+  .agregarinput {
+    width: 280px;
+  }
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .agregarinput {
+    width: 240px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 380px) {
+  .agregarinput {
+    width: 180px;
+  }
+  .tarjeta {
+    background-color: var(--blanco);
+    padding: 30px 20px 30px 20px;
+  }
+}

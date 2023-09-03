@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+.aunmastodo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.todo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.arriba {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caracteristicas {
+    width: 950px;
+    display: block;
+    justify-content: center;
+    padding: 30px;
+}
+
+.caracteristicas p {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.texto {
+    margin: 30px 60px 30px 30px;
+    width: 400px;
+}
+
+.texto .titulo {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.caracteristicas .titulo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.texto .precio {
+    margin: 10px 0 30px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.texto .carrito {
+    width: 100%;
+    padding: 6px 24px;
+    border-radius: 4px;
+    background-color: var(--verde_primario);
+    border: 2px solid var(--verde_primario);
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+.texto .comprar {
+    width: 100%;
+    padding: 6px 24px;
+    border-radius: 4px;
+    background-color: var(--blanco);
+    border: 2px solid var(--verde_primario);
+    text-decoration: none;
+    color: var(--verde_primario);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+.texto .descripcion {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.foto {
+    margin: 30px;
+    margin-right: 150px;
+}
+
+.foto img {
+    width: 400px;
+    height: 463px;
+
+}
+
+.otrasfotos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.otrasfotos img {
+    margin-top: 5px;
+    width: 130px;
+    height: 151px;
+}
+
+.card-footer {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 1px solid var(--negro);
+}
+
+.favoritos {
+    left: 368px;
+    text-decoration: none;
+    color: var(--negro);
+    top: -30px;
+    position: relative;
+    display: inline-block;
+}
+
+.favoritos::before {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: 12px;
+    transform: translate(-50%, -50%);
+}
+
+.favoritos i {
+    position: absolute;
+    top: -12px;
+
+    font-size: 18pt;
+
+}
+
+@media(max-width: 1070px) {
+
+    .todo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arriba {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .foto {
+        margin-top: 90px;
+        margin: 0 auto;
+    }
+
+    .otrasfotos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caracteristicas {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .card-footer {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-top: 1px solid var(--negro);
+    }
+}
+
+
+
+@media(max-width: 500px) {
+
+    .texto {
+        margin: 30px 0 30px 0;
+        width: 350px;
+    }
+
+    .todo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arriba {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .foto {
+        margin-top: 90px;
+        margin: 0 auto;
+    }
+
+    .foto img {
+        width: 300px;
+        height: 347px;
+    }
+
+    .otrasfotos img {
+        margin-top: 5px;
+        width: 97px;
+        height: 112px;
+
+    }
+    .otrasfotos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caracteristicas {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .favoritos {
+        left: 268px;
+        text-decoration: none;
+        color: var(--negro);
+        top: -30px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-top: 1px solid var(--negro);
+    }
+
+    .texto .carrito {
+        width: 100%;
+        padding: 6px 14px;
+        border-radius: 4px;
+        background-color: var(--verde_primario);
+        border: 2px solid var(--verde_primario);
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    .texto .comprar {
+        width: 100%;
+        padding: 6px 14px;
+        border-radius: 4px;
+        background-color: var(--blanco);
+        border: 2px solid var(--verde_primario);
+        text-decoration: none;
+        color: var(--verde_primario);
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+    }
+}

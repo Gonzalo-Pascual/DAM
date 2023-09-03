@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.centrado {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+table {
+  border-spacing: 0;
+  width: 95%;
+  margin: 15px 0px;
+  padding: 5px 0;
+  box-shadow: 1px 2px 10px #454545;
+  border-collapse: collapse;
+}
+
+.titulo {
+  padding: 8px 20px;
+  background-color: var(--verde_primario);
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 20px;
+  border-top: 1px solid var(--verde_primario);
+}
+
+th {
+  color: black;
+  padding: 7px 10px 7px 20px;
+}
+
+td {
+  padding: 7px 0 7px 20px;
+}
+
+.borde {
+  border-top: 1px solid #ccc;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
+
+.meses{
+  background-color:var(--verde_claro); 
+  color: white;
+}
+
+.eleccion{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.elecciontabla {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  width: 95%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.der{
+  text-decoration: none;
+    padding: 3px 20px;
+    border: 0;
+    background: var(--verde_primario);
+    border-radius: 3px;
+    color: var(--blanco);
+}
+
+.elecciontabla .der a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 16px;
+}
+
+.elecciontabla .izq a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--negro);
+  margin-right: 20px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.elecciontabla a:hover {
+  color: var(--amarillo_contraste);
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: var(--amarillo_contraste);
+  position: absolute;
+  bottom: -1px;
+  right: 50%;
+  transition: all .5s;
+}
+
+.link.active::after {
+  width: 100%;
+  right: 0;
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url("img/11.jpg");
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.alert-warning {
+    color: red;
+}
+
+img {
+    margin-top: 20px;
+    width: 40%;
+}
+
+.left {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    width: 550px;
+
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 0px 40px 30px 40px;
+    box-shadow: 2px 2px 10px #454545;
+
+}
+
+.inicio>h2 {
+    color: #1a1a1a;
+}
+
+
+.inicio>h4 {
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form>p {
+    text-align: right;
+}
+
+.form>p>a {
+    color: #000;
+    font-size: 14px;
+}
+
+
+.form-field:focus {
+    border-color: #ebc04b;
+}
+
+input[type="submit"] {
+    padding: 14px 10px 14px 10px;
+    border: 0;
+    background: var(--verde_primario);
+    border-radius: 3px;
+    margin: 50px 0 20px 0;
+    font-size: 14pt;
+    color: var(--blanco);
+}
+
+.animation {
+    animation-name: move;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+}
+
+.a1 {
+    animation-delay: .3s;
+}
+
+.a2 {
+    animation-delay: .4s;
+}
+
+.a3 {
+    animation-delay: .5s;
+}
+
+.a4 {
+    animation-delay: .6s;
+}
+
+.a5 {
+    animation-delay: .7s;
+}
+
+.a6 {
+    animation-delay: .8s;
+}
+
+.a7 {
+    animation-delay: .9s;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.input-container {
+    position: relative;
+    margin-top: 50px;
+    max-width: 470px;
+    justify-content: flex-start;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"] {
+    font-size: 15pt;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--negro);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 15pt;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label,
+.input-container input[type="password"]:focus~.label,
+.input-container input[type="password"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: var(--negro);
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--amarillo_contraste);
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline,
+.input-container input[type="password"]:focus~.underline,
+.input-container input[type="password"]:valid~.underline {
+    transform: scaleX(1);
+}

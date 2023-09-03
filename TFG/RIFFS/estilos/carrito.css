@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import 'colores.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+.aunmastodos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.sinmargen{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.todos {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.producto {
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.total {
+    margin: 40px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nombre {
+    margin: 20px 0 0 30px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.card-footer {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid var(--negro);
+}
+
+
+.textototal .comprar {
+    width: 150px;
+    padding: 6px 35px;
+    border-radius: 4px;
+    background-color: var(--verde_primario);
+    border: 2px solid var(--verde_primario);
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+.producto img {
+    margin: 20px;
+    width: 150px;
+}
+
+.producto .texto {
+    margin-top: 20px;
+
+}
+
+.menoscerrar {
+    display: flex;
+}
+
+.textototal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textototal .titulototal {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.texto .titulo {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--negro);
+    text-decoration: none;
+}
+
+.texto .precio {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cantidad {
+    margin-top: 20px;
+}
+
+.cantidad label {
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--negro);
+}
+
+.cantidad i {
+    font-weight: 700;
+    font-size: 28px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--negro);
+}
+
+.cantidad .menos {
+    margin-right: 15px;
+}
+
+.cantidad .mas {
+    margin-left: 15px;
+}
+
+.producto .cerrar {
+    margin: 20px 30px 0 0;
+}
+
+.producto .fecha {
+    margin: 20px 30px 0 0;
+}
+
+.producto .cerrar i {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--negro);
+
+}
+
+@media(max-width: 750px) {
+
+    .todos {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .todos {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .menoscerrar {
+        display: block;
+        width: 200px;
+    }
+
+    .producto .texto {
+        margin: 0 0 20px 20px;
+
+    }
+
+    .producto .cerrar {
+        margin: 20px 20px 0 0;
+    }
+
+    .producto .fecha {
+        margin: 20px 10px 0 0;
+    }
+}
